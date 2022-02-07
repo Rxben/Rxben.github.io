@@ -88,7 +88,9 @@ input, select, textarea {
 		}
 
 	}
-
+	nice{
+		text-align: center;
+	}
 	html {
 		box-sizing: border-box;
 	}
@@ -2558,6 +2560,7 @@ input, select, textarea {
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
 				}
+				
 
 /* Image */
 
@@ -2628,11 +2631,14 @@ input, select, textarea {
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		padding-left: 10em;
 	}
 
 		ul li {
 			padding-left: 0.5em;
+		}
+		ul img{
+			padding-left: 0;
 		}
 
 		ul.alt {
@@ -3209,6 +3215,7 @@ input, select, textarea {
 			padding: 5em 5em 3em 5em ;
 			max-width: 100%;
 			width: 75em;
+			
 		}
 
 			@media screen and (max-width: 1680px) {
@@ -3262,7 +3269,13 @@ input, select, textarea {
 		.wrapper.style3-alt {
 			background-color: #953d75;
 		}
-
+		.wrapper.style4{
+			background-color: #abd02c
+		}
+		wrapper.nice{
+			text-align:center;
+		}
+		
 		.wrapper.fullscreen {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -3365,15 +3378,15 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		background-color: #5e42a6;
-		cursor: default;
-		padding: 1.75em 2em;
-	}
+#header {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	background-color: #442f7a;
+	cursor: default;
+	padding: 1.75em 2em;
+}
 
 		#header > .title {
 			border: 0;
@@ -3388,7 +3401,7 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			text-align: right;
+			text-align: center;
 		}
 
 			#header > nav > ul {
@@ -3488,6 +3501,50 @@ input, select, textarea {
 	#header + #wrapper > .wrapper > .inner {
 		margin: 0 auto;
 	}
+
+/* Style the navigation menu */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	position: relative;
+}
+
+	/* Hide the links inside the navigation menu (except for logo/home) */
+	.topnav #myLinks {
+		display: none;
+	}
+
+	/* Style navigation menu links */
+	.topnav a {
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+		/* Style the hamburger menu */
+		.topnav a.icon {
+			background: black;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		/* Add a grey background color on mouse-over */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+/* Style the active link (or home/logo) */
+.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+
 
 /* Footer */
 
